@@ -75,7 +75,8 @@
                         </div>
                         <div class="col-12">
                           <h6 class="text-right text-black font-weight-bold">
-                            {{ item.gender }}
+                            <span v-if="item.gender === 'male'"> آقا</span>
+                            <span v-if="item.gender === 'female'"> خانم</span>
                           </h6>
                         </div>
                       </div>
